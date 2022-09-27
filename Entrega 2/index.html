@@ -8,75 +8,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <header>
 <section>
-  <nav>
-    <ul>
-        <li><a href="#about">Sobre mí</a></li>
-        <li><a href="#education">Proyectos</a></li>
-        <li><a href="#portfolio">Contacto</a></li>
-       
-    </ul>
-</nav>
+  <nav style="display: flex; justify-content: space-between; border-bottom: 1px solid #26292D; width: 100%;">
+      <ul class="header">
+        <li><a href="#home" style="color: white; font-size: 30px; background-color: #171718; font-family: 'Poppins'; font-style: normal; font-weight: 600; font-size: 24px; line-height: 32px;" >Martín&nbsp;Zuluaga</a></li>
+      </ul>
+
+      <ul class="header">
+          <li class="accordion"><img src="https://assets.stickpng.com/thumbs/588a64e7d06f6719692a2d11.png" alt="" style="width: 40px; height: 40px;"></li>
+          <li class="linked"><a href="#home" style="color: #85BFD1 ; font-family: 'Poppins'; font-style: normal; font-weight: 500; font-size: 16px; line-height: 16px;" >Incio</a></li>
+          <li class="linked"><a href="#home" style="color: white; font-family: 'Poppins'; font-style: normal; font-weight: 500; font-size: 16px; line-height: 16px;" >Acerca&nbspDe&nbspmí</a></li>
+          <li class="linked"><a href="#home" style="color: white; font-family: 'Poppins'; font-style: normal; font-weight: 500; font-size: 16px; line-height: 16px;" >Proyectos</a></li>
+          <li class="linked"><a href="#home" style="color: white; font-family: 'Poppins'; font-style: normal; font-weight: 500; font-size: 16px; line-height: 16px;" >Contactame</a></li>
+
+
+
+      </ul>
+  </nav>
 </section>
 </header>
 
 <body>
   <section>
-    <h1>Martín Zuluaga, Game Developer</h1>
+    <br>
+    <div style="width: 100%;">
+      <div class="firstTitle">Martín&nbsp;Zuluaga,<br>Game Developer</div>
+    </div>
+    <br>
+    <br>
 
-    <h2>Sobre mí</h2>
-    <img src="images/me.JPEG" alt="me" width="400" height="400">
-    <p>¡Hola! Mi nombre es Martín Zuluaga y me encargo de hacer experiencias de entretenimiento digital,<br>
-       especialmente videojuegos. He trabajado en varios proyectos como Game Developer, Game Designer y UI Designer.
-      <br> Mi enfoque es en Unity programando a través de C# pero también domino Adobe Photoshop, Adobe Premier, Sony Vegas Pro, Figma y Aseprite, entre otras herramientas.</p>
+    <div style="width: 100%;"> 
+
+      <div class="aboutMe">
+        <div class="aboutMeImg">
+          <img src="images/me.JPEG" alt="me" style="width: 100%; height: 400px; object-fit: cover;border-radius: 30px;">
+        </div>
+
+        <div class="aboutMeText">
+          <h2 style="font-weight: 500; font-size: 40px;">Sobre mí</h2>
+          <p style="text-align: left; font-style: normal; font-weight: 200;">¡Hola! Mi nombre es Martín Zuluaga y me encargo de hacer experiencias de entretenimiento digital,<br>
+          especialmente videojuegos. He trabajado en varios proyectos como Game Developer, Game Designer y UI Designer.
+          <br> Mi enfoque es en Unity programando a través de C# pero también domino Adobe Photoshop, Adobe Premier, Sony Vegas Pro, Figma y Aseprite, entre otras herramientas.</p>
+    
+        </div>
+  
+      </div>
+
+    </div>
     
   </section>
 
     <main>  
-        <section>
-          <h2>Proyectos</h2>
-            <ul>
-                <li><h3>Bee Factory (COMING SOON)</h3></li>
-                <img src="images/BeFactory.png" alt="Evangelion" width="800" height="320">
-                <li><h3>Chrono Blood</h3></li>
-                <img src="images/ChronoBlood.png" alt="Monster" width="800" height="320">
-                <li><h3>Inside</h3></li>
-                <img src="images/Inside.png" alt="Jojos" width="800" height="320">
-            </ul> 
+        <div class="proyectos">
+          <br>
+          <h2 class="proyectoTextPrincipal">Proyectos</h2>
+          <ul style="padding: 0px;">
+              <li><h3 class="proyectoText">Bee Factory (COMING SOON)</h3></li>
+                <img src="images/BeFactory.png" alt="Evangelion" style="width: 100%;">
+              <li><h3 class="proyectoText">Chrono Blood</h3></li>
 
-            <a href="#about"><button class="btn">ver más<i></i></button></a>
+                <img src="images/ChronoBlood.png" alt="Monster" style="width: 100%;" >
+              <li><h3 class="proyectoText">Inside</h3></li>
 
-        </section>
+                <img src="images/Inside.png" alt="Jojos" style="width: 100%;">
+          </ul> 
 
+          
+        </div>
+        <div style="width: 100%; display: flex; justify-content: center;">
+  
+          <a href="#about"><div class="btn" style="background-color: #5C62EC; color: white; width: 100px; justify-content: center; height: 40px; align-items: center; display: flex; border-radius: 7.98349px;"><i>ver más</i></div></a>
+        </div>
+        <br>
+        <hr>
     </main>
 
 <footer>
-  <section>
-    <h2> Contáctame</h2>
-    <ul>
-      <li>Correo Electrónico: martin.zuluaga@upb.edu.co</li>
-      <li><a href="https://www.linkedin.com/in/martinjzuluaga/"
-        title="LinkedIn">LinkedIn</a>.</li>
-         <li><a href="https://github.com/mejara171"
-        title="GitHub">GitHub</a>.</li>
+  <div class="proyectos2">
+    <h2 style="color: white;"> Martin Zualuaga</h2>
+    <ul class="footerUl">
+      <li style="color: #85BFD1;">Inicio</li>
+      <li>Acerca de mí</li>
+      <li>Proyectos</li>
     </ul>
-  </section>
+    <ul >
+      <li style="color: #85BFD1;">Contactame</li>
+      <li>Correo</li>
+      <li>Linkedin</li>
+    </ul>
+    <ul>
+      <li style="color: #85BFD1;">Social</li>
+    </ul>
+  </div>
+  <h3 class="proyectos">@ 2022 Martín Zuluaga</h3>
     
-  <section>
+  <!-- <section>
       <ul>
           <li><a href="#about">Sobre mí</a></li>
           <li><a href="#education">Proyectos</a></li>
           <li><a href="#portfolio">Contacto</a></li>
-         
       </ul>
-  </section>
+  </section> -->
   
-      <h3>@ 2022 Martín Zuluaga</h3>
     
 </footer>
- 
+
 </body>
 </html>
