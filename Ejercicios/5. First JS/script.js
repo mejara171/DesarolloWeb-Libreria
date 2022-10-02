@@ -27,8 +27,9 @@ function ConvertRoman()
     document.getElementById("results").textContent = str;  
 }
 
-function myFunction() 
+function Reset() 
 {
-  document.ConvertRoman.reset();
+  document.getElementById("userVal1").value = '';
+  document.getElementById("results").textContent = '';
 }
 
