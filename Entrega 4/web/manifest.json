@@ -1,6 +1,6 @@
 {
-    "name": "news",
-    "short_name": "news",
+    "name": "food_delivery_ui",
+    "short_name": "food_delivery_ui",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

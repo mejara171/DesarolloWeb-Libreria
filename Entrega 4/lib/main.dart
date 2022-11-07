@@ -1,33 +1,39 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:news/screens/main/main_screen.dart';
-
-import 'constants.dart';
+import 'package:food_delivery_ui/model/appdata_model.dart';
+import 'package:food_delivery_ui/pages/landing_page.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 
 void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primaryColor: kPrimaryColor,
-        scaffoldBackgroundColor: kBgColor,
-        elevatedButtonTheme: ElevatedButtonThemeData(
-          style: TextButton.styleFrom(backgroundColor: kPrimaryColor),
-        ),
-        textTheme: TextTheme(
-          bodyText1: TextStyle(color: kBodyTextColor),
-          bodyText2: TextStyle(color: kBodyTextColor),
-          headline5: TextStyle(color: kDarkBlackColor),
-        ),
+    return ChangeNotifierProvider(
+      create: (context) => AppDataModel(),
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Ludere',
+        theme: ThemeData(
+            primarySwatch: Colors.blue,
+            textTheme: GoogleFonts.poppinsTextTheme(
+              Theme.of(context).textTheme,
+            ),
+            outlinedButtonTheme: OutlinedButtonThemeData(
+                style: OutlinedButton.styleFrom(
+                    foregroundColor: Colors.white,
+                    textStyle: TextStyle(
+                      fontSize: 24.0,
+                      fontWeight: FontWeight.bold,
+                      letterSpacing: 1.2,
+                    ),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(30.0),
+                    )))),
+        home: LandingPage(),
       ),
-      home: MainScreen(),
     );
   }
 }
