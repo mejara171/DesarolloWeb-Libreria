@@ -40,7 +40,6 @@ class _LandingPageState extends State<LandingPage> {
 
   List<Widget> getContent(index) {
     return [
-      [HomeItem(context: context)],
       [
         Center(
           child: Container(
@@ -255,6 +254,7 @@ class _LandingPageState extends State<LandingPage> {
           ),
         )
       ],
+      [HomeItem(context: context)],
       [
         Center(
           child: Container(

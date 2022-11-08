@@ -26,7 +26,7 @@ class _NavBarState extends State<NavBar> {
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   ItemText(
-                    text: 'Bee Corp',
+                    text: 'Privacy',
                     isSelected: selectedItemIndex == 0,
                     onPressed: () {
                       onPressItem(0);
@@ -34,7 +34,7 @@ class _NavBarState extends State<NavBar> {
                   ),
                   SizedBox(width: 20.0),
                   ItemText(
-                    text: 'Privacy',
+                    text: 'Bee Corp',
                     isSelected: selectedItemIndex == 1,
                     onPressed: () {
                       onPressItem(1);
