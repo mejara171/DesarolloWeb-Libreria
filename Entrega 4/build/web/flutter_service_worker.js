@@ -31,9 +31,9 @@ const RESOURCES = {
 "assets/packages/flutter_icons/fonts/Zocial.ttf": "5cdf883b18a5651a29a4d1ef276d2457",
 "assets/shaders/ink_sparkle.frag": "a3adf5cd01678790402a8c5d8db68e61",
 "favicon.png": "43aae50d4515be5ef29cb91c10f1b14c",
-"index.html": "9e12ad661ebfeb18891483020472b6fd",
-"/": "9e12ad661ebfeb18891483020472b6fd",
-"main.dart.js": "eabc1dd9a48bd50f41fce89e96dc2761",
+"index.html": "ddc7f26d7bfa02f04a9e5ed03b732b15",
+"/": "ddc7f26d7bfa02f04a9e5ed03b732b15",
+"main.dart.js": "fa43779b9e6bfc8be064c7343782b8b0",
 "manifest.json": "b1b6a8d0af6c0a0c6dbceab6f0aa6bbc",
 "version.json": "8a6bf9f12080366a5b4c246a83d12eee"
 };
